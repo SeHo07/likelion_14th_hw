@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="page-container">
+        <h1 class="title">자기소개</h1>
+        <h6 class="welcome">This is Second Page</h6>
+            <div class="section">
+                <ul>
+                    <li>이름: {{introduce.name}}</li>
+                    <li>학과: {{introduce.major}}</li>
+                    <li>학번: {{introduce.num}}</li>
+                    <li>나이: {{introduce.age}}</li>
+                    <li>트랙: {{introduce.track}}</li>
+                </ul>
+            </div>
+            <div>
+                <p class="ig"><img src="{% static 'images/face.png' %}" alt="얼굴" width="100px"></p>
+            </div>
+    </div>
+    
+
+{% endblock %}
+

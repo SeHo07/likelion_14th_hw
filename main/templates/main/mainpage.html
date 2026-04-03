@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="page-container">
+
+        <h1 class="title">멋쟁이사자처럼 {{week}}주차 세션 정리</h1>
+        <h6 class="welcome">- Django 기초 -</h6>
+
+        <div class="section">
+            <div class="section-title">🦁 Django 기초 세션 정리 🦁</div>
+            <ul>
+                {% for point in points %}
+                     <li>{{point}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🦁 이번 세션 핵심 내용 🦁</div>
+            <ul>
+                {% for core in cores %}
+                     <li>{{core}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
