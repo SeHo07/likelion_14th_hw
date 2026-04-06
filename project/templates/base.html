@@ -39,10 +39,7 @@
         .page-container {
             padding: 40px 48px;
         }
-        .ig{
-            text-align: center;
-            padding-top: 40px;
-        }
+
         .title {
             font-size: 48px;
             font-weight: bold;
@@ -80,10 +77,10 @@
 <body class="body-container">
 
     {% include 'shared/_navbar.html' %}
-       <p class="ig"><img src="{% static 'images/ccco.png' %}" alt="펭귄" width="100px"></p>
+       <p class="ig"><img src="{% static 'images/ccco.png' %}" alt="up" width="100px"></p>
     {% block content %}
     {% endblock %}  
-       <p class="ig"><img src="{% static 'images/cccd.png' %}" alt="펭귄" width="100px"></p>
+       <p class="ig"><img src="{% static 'images/cccd.png' %}" alt="down" width="100px"></p>
  
 
 </body>
